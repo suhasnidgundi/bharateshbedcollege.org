@@ -1,0 +1,35 @@
+.desk-section {
+  padding: 80px 0;
+}
+
+.desk-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin-bottom: 30px;
+}
+
+.desk-card:hover {
+  transform: translateY(-5px);
+}
+
+.desk-image {
+  height: 250px;
+  background: linear-gradient(
+    135deg,
+    #0891b2,
+    #059669
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3rem;
+}
+
+.desk-card-body {
+  padding: 25px;
+  text-align: center;
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import "./deskSection.css";
 
 const DeskSection = () => (
   <section id="faculty" className="desk-section">

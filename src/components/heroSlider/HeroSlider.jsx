@@ -1,65 +1,49 @@
-import "./heroSlider.css";
+import React from 'react';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import './heroSlider.css'; // Create this file for fine-tuned styles
 
-const HeroSlider = () => (
-  <section className="home-slider owl-carousel">
-    <div className="slider-item" style={{ backgroundImage: "url(images/bg_1.jpg)" }}>
-      <div className="overlay"></div>
-      <div className="container">
-        <div
-          class="row no-gutters slider-text align-items-center justify-content-center"
-          data-scrollax-parent="true"
-        >
-          <div class="col-md-8 text-center ftco-animate">
-            <h1 class="mb-4">Admissions Open 2025-2026</h1>
-            <p>Join us to build a rewarding career in teaching.</p>
-            <p>
-              <a href="#" class="btn btn-secondary px-4 py-3 mt-3">
-                Apply Now
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="slider-item" style={{ backgroundImage: "url(images/bg_2.jpg)" }}>
-      <div className="overlay"></div>
-      <div className="container">
-        <div
-          class="row no-gutters slider-text align-items-center justify-content-center"
-          data-scrollax-parent="true"
-        >
-          <div className="col-md-8 text-center ftco-animate">
-            <h1 className="mb-4">Vibrant Campus Life</h1>
-            <p>Experience a holistic educational environment.</p>
-            <p>
-              <a href="#" className="btn btn-secondary px-4 py-3 mt-3">
-                Learn More
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="slider-item" style={{ backgroundImage: "url(images/bg_2.jpg)" }}>
-      <div className="overlay"></div>
-      <div className="container">
-        <div
-          class="row no-gutters slider-text align-items-center justify-content-center"
-          data-scrollax-parent="true"
-        >
-          <div class="col-md-8 text-center ftco-animate">
-            <h1 class="mb-4">Expert Faculty</h1>
-            <p>Learn from experienced and dedicated mentors.</p>
-            <p>
-              <a href="faculty.html" class="btn btn-secondary px-4 py-3 mt-3">
-                Meet Our Team
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-);
+const sliderItems = [
+  {
+    image: '/images/bg_1.jpg',
+    title: 'Vibrant Campus Life',
+    description: 'Experience a holistic educational environment.',
+    btnText: 'Learn More',
+    btnLink: '#'
+  },
+  {
+    image: '/images/bg_1.jpg',
+    title: 'Vibrant Campus Life',
+    description: 'Experience a holistic educational environment.',
+    btnText: 'Learn More',
+    btnLink: '#'
+  },
+];
 
-export default HeroSlider;
+export default function HeroSlider() {
+  return (
+    <section className="home-slider">
+      <OwlCarousel
+        className="owl-theme"
+        loop
+        margin={0}
+        nav={false}
+        items={1}
+        autoplay
+        dots
+      >
+        {sliderItems.map((item, idx) => (
+          <div key={idx} className="slider-item" style={{backgroundImage: `url(${item.image})`}}>
+            <div className="slider-overlay"></div>
+            <div className="slider-content">
+              <h1>{item.title}</h1>
+              <p>{item.description}</p>
+              <a href={item.btnLink} className="slider-btn">{item.btnText}</a>
+            </div>
+          </div>
+        ))}
+      </OwlCarousel>
+    </section>
+  );
+}
