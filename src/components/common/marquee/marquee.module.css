@@ -1,0 +1,39 @@
+.marquee-container {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.marquee-label {
+  background-color: #d9534f;
+  color: #fff;
+  padding: 5px 15px;
+  font-weight: bold;
+}
+.marquee-content-wrapper {
+  flex-grow: 1;
+  overflow: hidden;
+  margin: 0 10px;
+}
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
+.marquee-content a {
+  color: #333;
+  text-decoration: none;
+}
+.marquee-content a:hover {
+  text-decoration: underline;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

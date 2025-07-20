@@ -1,0 +1,33 @@
+.footer {
+  background: #1e293b;
+  color: white;
+  padding: 60px 0 30px;
+}
+.footer h5 {
+  color: #0891b2;
+  margin-bottom: 20px;
+}
+.footer a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer a:hover {
+  color: #0891b2;
+}
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #0891b2;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+.social-icons a:hover {
+  background: #2563eb;
+  transform: translateY(-3px);
+}
