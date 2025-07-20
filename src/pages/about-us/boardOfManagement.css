@@ -1,0 +1,51 @@
+.board-container {
+  max-width: 960px;
+  margin: 4rem auto;
+}
+.board-title {
+  color: #343a40;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.board-subtitle {
+  color: #6c757d;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+.member-card {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1.5rem;
+}
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+.member-card .card-body {
+  padding: 1.5rem;
+}
+.member-name {
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 0.25rem;
+}
+.member-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0d6efd;
+  margin-bottom: 0.75rem;
+}
+.member-info {
+  font-size: 0.9rem;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.member-info i {
+  margin-right: 0.5rem;
+  color: #6c757d;
+}

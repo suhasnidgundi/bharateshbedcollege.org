@@ -1,0 +1,30 @@
+.hero {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+.hero h1 {
+  font-weight: 600;
+}
+.principal-img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.section-padding {
+  padding: 60px 0;
+}
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card-title {
+  color: #2575fc;
+  font-weight: 600;
+}

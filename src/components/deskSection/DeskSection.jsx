@@ -14,7 +14,7 @@ const DeskSection = () => (
               <i className="fas fa-user-tie"></i>
             </div>
             <div className="desk-card-body">
-              <h4>Dr. Rajesh Kumar</h4>
+              <h4>Dr. V. I. Pujari</h4>
               <p className="text-muted">Principal</p>
               <p>Leading with 25+ years of experience in educational administration and teacher training.</p>
             </div>

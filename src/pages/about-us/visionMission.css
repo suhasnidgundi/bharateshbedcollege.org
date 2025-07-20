@@ -1,0 +1,54 @@
+.main-title {
+            font-family: 'Playfair Display', serif;
+            color: #2c3e50;
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .vmo-section {
+            padding: 80px 0;
+        }
+        .vmo-card {
+            background-color: #ffffff;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            padding: 40px;
+        }
+        .vmo-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+        .vmo-icon {
+            font-size: 4rem;
+            color: #3498db;
+            margin-right: 40px;
+            width: 100px;
+            text-align: center;
+        }
+        .vmo-content h2 {
+            font-family: 'Playfair Display', serif;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        .vmo-content p, .vmo-content ul {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        .vmo-content ul {
+            padding-left: 20px;
+            list-style: none;
+        }
+        .vmo-content ul li::before {
+            content: "\f00c"; /* Font Awesome check icon */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: #27ae60;
+            margin-right: 10px;
+        }
