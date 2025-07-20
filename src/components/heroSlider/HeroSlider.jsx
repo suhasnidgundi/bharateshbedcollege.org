@@ -42,7 +42,7 @@ const HeroSlider = () => (
     </div>
     <div className="slider-item" style={{ backgroundImage: "url(images/bg_2.jpg)" }}>
       <div className="overlay"></div>
-      <div class="container">
+      <div className="container">
         <div
           class="row no-gutters slider-text align-items-center justify-content-center"
           data-scrollax-parent="true"
