@@ -1,24 +1,24 @@
-import React from 'react';
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-import './heroSlider.css'; // Create this file for fine-tuned styles
+import React from "react";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import "./heroSlider.css"; // Create this file for fine-tuned styles
 
 const sliderItems = [
   {
-    image: '/images/bg_1.jpg',
-    title: 'Vibrant Campus Life',
-    description: 'Experience a holistic educational environment.',
-    btnText: 'Learn More',
-    btnLink: '#'
+    image: "/images/banner.jpg",
+    // title: "Vibrant Campus Life",
+    // description: "Experience a holistic educational environment.",
+    // btnText: "Learn More",
+    // btnLink: "#",
   },
   {
-    image: '/images/bg_1.jpg',
-    title: 'Vibrant Campus Life',
-    description: 'Experience a holistic educational environment.',
-    btnText: 'Learn More',
-    btnLink: '#'
-  },
+    image: "/images/college_building_front_side.jpg",
+    // title: 'Vibrant Campus Life',
+    // description: 'Experience a holistic educational environment.',
+    // btnText: 'Learn More',
+    // btnLink: '#'
+  }
 ];
 
 export default function HeroSlider() {
@@ -34,12 +34,20 @@ export default function HeroSlider() {
         dots
       >
         {sliderItems.map((item, idx) => (
-          <div key={idx} className="slider-item" style={{backgroundImage: `url(${item.image})`}}>
+          <div
+            key={idx}
+            className="slider-item"
+            style={{ backgroundImage: `url(${item.image})` }}
+          >
             <div className="slider-overlay"></div>
             <div className="slider-content">
               <h1>{item.title}</h1>
               <p>{item.description}</p>
-              <a href={item.btnLink} className="slider-btn">{item.btnText}</a>
+              {item.btnLink && item.btnText && (
+                <a href={item.btnLink} className="slider-btn">
+                  {item.btnText}
+                </a>
+              )}
             </div>
           </div>
         ))}
