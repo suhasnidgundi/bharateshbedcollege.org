@@ -17,9 +17,10 @@ const VisionMissionSection = () => (
             </div>
             <h3>Our Vision</h3>
             <p>
-              To be a center of excellence in teacher education, recognized for
-              our innovative approach and for producing educators who are agents
-              of positive social change and lifelong learners.
+              To nurture teachers who are academically solid, culturally and
+              socially aware, and spiritually balanced. The aim is to shape
+              educators who contribute meaningfully to society while holding
+              strong personal values.
             </p>
           </div>
         </div>
@@ -30,10 +31,11 @@ const VisionMissionSection = () => (
             </div>
             <h3>Our Mission</h3>
             <p>
-              To equip prospective teachers with cutting-edge knowledge,
-              practical skills, and ethical values required to excel in their
-              profession while fostering an environment of research and
-              continuous learning.
+              To deliver quality education by blending innovative teaching
+              methods and instructional technology. The institute emphasizes
+              spiritual and cross-cultural understanding, especially addressing
+              rural and socially relevant challenges through well-rounded
+              teacher preparation.
             </p>
           </div>
         </div>
